@@ -1,0 +1,254 @@
+.hidden {
+  overflow: hidden;
+}
+
+body {
+  background: #E6FEFA;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body a {
+  text-decoration: none;
+  color: #4CA49B;
+}
+
+#menu {
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  left: -262px;
+  top: 0;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+#menu a {
+  display: block;
+  color: #E6FEFA;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#menuContent {
+  position: absolute;
+  width: 200px;
+  height: 100%;
+  left: 60px;
+  background: #408B84;
+  padding-top: 114px;
+}
+
+#menuToggle {
+  position: absolute;
+  top: 0;
+  left: -13px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 275px;
+  background: rgba(0, 0, 0, 0.45);
+  -webkit-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+}
+
+#menuToggle span {
+  display: block;
+  position: absolute;
+  height: 5px;
+  width: 70%;
+  background: #E6FEFA;
+  border-radius: 2px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+#menuToggle span:nth-child(1) {
+  left: 5px;
+  top: 5px;
+}
+
+#menuToggle span:nth-child(2) {
+  left: 5px;
+  top: 18px;
+}
+
+#menuToggle span:nth-child(3) {
+  left: 5px;
+  top: 30px;
+}
+
+#menu.menu-open {
+  left: -60px;
+}
+
+#menu.menu-open span:nth-child(1) {
+  top: 18px;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+#menu.menu-open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+#menu.menu-open span:nth-child(3) {
+  top: 18px;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+
+header {
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  background: #4CA49B;
+}
+
+header .page_name {
+  position: absolute;
+  left: 50px;
+  top: 24%;
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header .page-home {
+  position: absolute;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: #2A5A55;
+}
+
+header .page-home a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+header .page-home a img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#cont-title {
+  position: absolute;
+  left: 20px;
+  font-size: 30px;
+  font-weight: 700;
+  top: 78px;
+  color: #4CA49B;
+}
+
+.context {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  position: relative;
+  width: 98%;
+  left: 1%;
+  top: 175px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#doc-title {
+  position: absolute;
+  left: 20px;
+  font-size: 30px;
+  font-weight: 700;
+  top: 276px;
+  color: #4CA49B;
+}
+
+h4 {
+  position: absolute;
+  left: 20px;
+  font-weight: 700;
+  top: 363px;
+  color: #4CA49B;
+}
+
+.doc {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[7];
+      grid-template-rows: repeat(7, 1fr);
+  row-gap: 5px;
+  position: relative;
+  top: 356px;
+  height: 300px;
+  width: 98%;
+  left: 1%;
+}
+
+.doc .doc-cell {
+  padding-left: 5px;
+  border-radius: 5px;
+  background-color: #4CA49B;
+  color: #E6FEFA;
+}
+
+#down-title {
+  position: absolute;
+  left: 20px;
+  font-size: 30px;
+  font-weight: 700;
+  top: 760px;
+  color: #4CA49B;
+}
+
+.down {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  row-gap: 8px;
+  position: relative;
+  width: 98%;
+  left: 1%;
+  height: 400px;
+  top: 487px;
+}
+
+.down .down-cell {
+  background: #4CA49B;
+  border: 3px outset rgba(28, 110, 164, 0.59);
+  border-radius: 5px;
+}
+
+.down .down-cell a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: #E6FEFA;
+}
+
+footer {
+  position: relative;
+  top: 574px;
+  width: 100%;
+  height: 50px;
+}
+
+footer img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=admission.css.map */

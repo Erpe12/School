@@ -1,0 +1,270 @@
+$color1: #E6FEFA;
+$color2: #4CA49B;
+$font-family: 'Times New Roman', Times, serif;
+
+
+.hidden {
+	overflow: hidden;
+}
+
+
+body {
+	background: $color1;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	a {
+		text-decoration: none;
+		color: $color2;
+	}
+}
+
+
+#menu {
+	position: fixed;
+	width: 250px;
+	height: 100%;
+	left: -262px;
+	top: 0;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+
+	a {	
+		display: block;
+		color: $color1;
+		font-size: 20px;
+		line-height: 40px;
+		text-align: center;
+		text-decoration: none;
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	}
+}
+
+
+#menuContent {
+	position: absolute;
+	width: 200px;
+	height: 100%;
+	left: 60px;
+	background: #408B84;
+	padding-top: 114px; 
+}
+
+
+#menuToggle {
+	position: absolute;
+	top: 0;
+	left: -13px;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	margin-left: 275px;
+	background: rgba(0, 0, 0, 0.45);
+	-webkit-transition: all .1s ease-in-out;
+	-moz-transition: all .1s ease-in-out;
+	-ms-transition: all .1s ease-in-out;
+	-o-transition: all .1s ease-in-out;
+	transition: all .1s ease-in-out;
+
+	span {
+		display: block;
+		position: absolute;
+		height: 5px;
+		width: 70%;
+		background: $color1;
+		border-radius: 2px;
+		opacity: 1;
+		left: 0;
+		transform: rotate(0deg);
+		transition: .25s ease-in-out;
+
+		&:nth-child(1) {
+			left: 5px;
+			top: 5px;
+		}
+
+		&:nth-child(2) {
+			left: 5px;
+			top: 18px;
+		}
+
+		&:nth-child(3) {
+			left: 5px;
+			top: 30px;
+		}
+	}
+}
+
+
+#menu.menu-open {
+	left: -60px;
+
+	span {
+		&:nth-child(1) {
+			top: 18px;
+			transform: rotate(135deg);
+		}
+
+		&:nth-child(2) {
+			opacity: 0;
+			left: -60px;
+		}
+
+		&:nth-child(3) {
+			top: 18px;
+			transform: rotate(-135deg);
+		}
+	}
+}
+
+
+
+header {
+	z-index: 999;
+	position: fixed;
+	width: 100%;
+	height: 40px;
+	background: $color2;
+
+	.page_name {
+		position: absolute;
+		left: 50px;
+		top: 24%;
+		font-size: 20px;
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	}
+
+	.page-home {
+		position: absolute;
+		right: 0;
+		width: 40px;
+		height: 40px;
+		border: none;
+		background-color: #2A5A55;
+
+		a {
+			display: block;
+			width: 100%;
+			height: 100%;
+
+			img {
+				display: block;
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+}
+
+
+#cont-title {
+    position: absolute;
+    left: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    top: 78px;
+    color: $color2;
+}
+
+
+.context {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    position: relative;
+    width: 98%;
+    left: 1%;
+    top: 175px;
+    font-family: 'Times New Roman', Times, serif;
+
+
+}
+
+
+#doc-title {
+    position: absolute;
+    left: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    top: 276px;
+    color: $color2;
+}
+
+
+h4 {
+    position: absolute;
+    left: 20px;
+    font-weight: 700;
+    top: 363px;
+    color: $color2;
+}
+
+
+.doc {
+    display: grid;
+    grid-template-rows: repeat(7, 1fr);
+    row-gap: 5px;
+    position: relative;
+    top: 356px;
+    height: 300px;
+    width: 98%;
+    left: 1%;
+
+    .doc-cell {
+        padding-left: 5px;
+        border-radius: 5px;
+        background-color: $color2;
+        color: $color1;
+    }
+}
+
+
+#down-title {
+    position: absolute;
+    left: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    top: 760px;
+    color: $color2;
+}
+
+
+.down {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 8px;
+    position: relative;
+    width: 98%;
+    left: 1%;
+    height: 400px;
+    top: 487px;
+
+    .down-cell {
+        background: $color2;
+        border: 3px outset rgba(28,110,164,0.59);
+        border-radius: 5px;
+
+        a {
+            display: block;
+            width: 100%;
+            text-decoration: none;
+            color: $color1;
+        }
+    }
+}
+
+
+footer {
+	position: relative;
+	top: 574px;
+	width: 100%;
+	height: 50px;
+
+	img {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+}
