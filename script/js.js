@@ -17,3 +17,13 @@ $(function(){
 		$("body").toggleClass("hidden");
 	});
 })(jQuery);
+
+
+var _emv = _emv || [];
+_emv['campaign'] = 'a7c3525b2c5e247a26a774c7';
+
+(function() {
+	var em = document.createElement('script'); em.type = 'text/javascript'; em.async = true;
+	em.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'leadback.ru/js/leadback.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(em, s);
+})();
