@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <rect width="25" height="25" id="artboard_1" />
+    <clipPath id="clip_1">
+      <use xlink:href="#artboard_1" clip-rule="evenodd" />
+    </clipPath>
+  </defs>
+  <g id="Artboard" clip-path="url(#clip_1)">
+    <use xlink:href="#artboard_1" stroke="none" fill="#FFFFFF" fill-opacity="0" />
+    <path d="M5 12.5L12.5 5L20 12.5L19.1667 12.5L19.1667 20L15.4167 20L15.4167 14.5834L9.58338 14.5834L9.58337 12.5001L15.4167 12.5001L15.4167 12.5L9.58333 12.5L9.58333 20L5.83333 20L5.83333 12.5L5 12.5Z" id="Rectangle-Union" fill="#E6FEFA" fill-rule="evenodd" stroke="none" />
+  </g>
+</svg>
