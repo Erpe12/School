@@ -151,7 +151,7 @@ header .page-home a img {
   background: #4CA49B;
   display: grid;
   grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 14% 26% 60%;
   row-gap: 2px;
   height: 100%;
   overflow: hidden;
