@@ -12,6 +12,8 @@ $font-family: 'Times New Roman', Times, serif;
 body {
 	background: $color1;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	box-sizing: border-box;
+	position: relative;
 
 	a {
 		text-decoration: none;
@@ -56,7 +58,7 @@ body {
 	background: #408B84;
 	width: 200px;
 	height: 100%;
-	padding-top: 114px; 
+	padding-top: 114px;
 }
 
 
@@ -127,7 +129,6 @@ body {
 }
 
 
-
 header {
 	z-index: 999;
 	position: fixed;
@@ -138,8 +139,8 @@ header {
 
 	.page_name {
 		position: absolute;
-		left: 50px;
-		top: 24%;
+		left: 3em;
+		top: 14%;
 		font-size: 20px;
 		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	}
@@ -209,7 +210,7 @@ header {
 	}
 
 	.swiper-text {
-		grid-row: 2 / 3;
+		grid-row: 2 / 2;
 		grid-column: 1 / 4;
 		font-family: $font-family;
 	}
@@ -217,11 +218,12 @@ header {
 
 	.swiper-img {
 		grid-row: 1 / 2;
-		grid-column: 3 / 4;
+		grid-column: 2 / 4;
 		justify-self: right;
 		overflow: hidden;
 		border-radius: 10px;
-		
+		background-color: red;
+
 		img {
 			display: block;
 			width: 100%;
@@ -254,7 +256,7 @@ img {
 
 .gallery {
 	position: relative;
-	width: 98%;
+	width: 67%;
 	left: 1%;
 	top: 227px;
 	display: flex;
@@ -316,86 +318,40 @@ img {
 }
 
 
-
-#cont {
-	position: relative;
-    left: 50px;
-	top: 230px;
-	width: 200px;
-    font-weight: 700;
-    color: $color2;
-    font-size: 30px;
-}
-
-.contact {
-	position: relative;
-	width: 98%;
-	left: 1%;
-	top: 267px;
-	display: grid; 
-	grid-template-rows: 33% 33% 34%;
-	grid-template-columns: 1fr;
-	gap: 0px;
-	height: 100%;
-
-	.contact-adres {
-		grid-row: 1 / 2;
-		grid-column: 1 / 2;
-	}
-
-	.contact-mail {
-		grid-row: 2 / 3;
-		grid-column: 1 / 2;
-	}
-
-	.contact-phone {
-		grid-row: 3 / 4;
-		grid-column: 1 / 2;
-	}
-}
-
-
-
-.contact-adres, .contact-mail, .contact-phone {
-	display: grid; 
-	grid-template-rows: 1fr 1fr 1fr;
-	grid-template-columns: 1fr 1fr;
-	gap: 0;
-	height: 100%;
-
-
-	.contact-adres-title, .contact-mail-title, .contact-phone-title {
-		grid-row: 1 / 2;
-		grid-column: 1 / 4;
-	}
-
-	.contact-adres-des, .contact-mail-des, .contact-phone-des {
-		grid-row: 2 / 3;
-		grid-column: 1 / 4;
-	}
-
-}
-
-
-.cont-img {
-
-	img {
-		width: 100%;
-		height: 100%;
-	}
-}
-
-
-
 footer {
-	position: relative;
-	top: 302px;
+	display: grid;
+	grid-template-rows: 40% 60%;
+	position: absolute;
 	width: 100%;
-	height: 50px;
+	height: 15%;
+	bottom: -70%;
+	background-color: $color2;
 
-	img {
-		display: block;
-		width: 100%;
-		height: 100%;
+	.foot-cell {
+
+		&:first-child {
+			a {
+				color: $color1;
+			}
+		}
+
+		.foot-phone,
+		.foot-mail {
+			margin: 2% 0 0 2%;
+		}
+
+
+	}
+	.foot-logo {
+		position: absolute;
+		width: 45px;
+		height: 45px;
+		left: 50%;
+		top: 5%;
+
+		img {
+			width: 100%;
+			height: 100%;
+		}
 	}
 }
