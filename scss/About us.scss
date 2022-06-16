@@ -1,7 +1,10 @@
 $color1: #E6FEFA;
 $color2: #4CA49B;
-$font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
+$color3: #295A55;
+$color-text: #000000;
+$color-num: #FF6C00;
+$font-family-text: 'Times New Roman', Times, serif;
+$font-family-title: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 
 .hidden {
@@ -11,7 +14,9 @@ $font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 body {
 	background: $color1;
-	font-family: $font-family;
+	a {
+		text-decoration: none;
+	}
 }
 
 
@@ -34,7 +39,7 @@ body {
 		line-height: 40px;
 		text-align: center;
 		text-decoration: none;
-		font-family: $font-family;
+		font-family: $font-family-title;
 	}
 }
 
@@ -126,13 +131,12 @@ header {
     top: 0;
 
 
-
 	.page_name {
 		position: absolute;
 		left: 4em;
 		top: 24%;
 		font-size: 20px;
-		font-family: $font-family;
+		font-family: $font-family-title;
 	}
 
 
@@ -142,7 +146,7 @@ header {
 		width: 40px;
 		height: 40px;
 		border: none;
-		background-color: #2A5A55;
+		background-color: $color3;
 
 		a {
 			display: block;
@@ -150,7 +154,6 @@ header {
 			height: 100%;
 
 			img {
-				display: block;
 				width: 100%;
 				height: 100%;
 			}
@@ -164,6 +167,10 @@ h1 {
     position: absolute;
     left: 20px;
     top: 65px;
+	font-size: 28px;
+	font-weight: 700;
+	color: $color2;
+	font-family: $font-family-title;
 }
 
 .main_center_text {
@@ -171,6 +178,67 @@ h1 {
     width: 98%;
     left: 1%;
     top: 136px;
+	font-family: $font-family-title;
+	color: $color-text;
+	background: $color-text;
+	background: $color1;
+
+
+
+	#work {
+		color: $color2;
+		font-family: $font-family-title;
+		font-size: 21px;
+		font-weight: 600;
+	}
+
+
+
+	#graph {
+		color: $color2;
+		font-family: $font-family-title;
+		font-size: 21px;
+		font-weight: 600;
+	}
+
+
+	a {
+		color: #4CA49B;
+	}
+
+	.text_marked {
+		color: $color-num;
+	}
+
+
+
+
+
+	h2 {
+		font-family: $font-family-title;
+		font-size: 24px;
+		font-weight: normal;
+		color: $color2;
+		left: 1%;
+	}
+
+
+	p {
+		margin: 12px 0;
+		font-family: $font-family-title;
+
+
+		strong {
+			font-weight: 600;
+			font-size: 15px;
+			color: $color2;
+		}
+
+		span {
+			font-family: $font-family-text;
+		}
+	}
+
 }
 
 
@@ -182,6 +250,7 @@ footer {
 	height: 80px;
 	top: 186px;
 	background-color: $color2;
+	font-family: $font-family-title;
 
 	.foot-cell {
 
