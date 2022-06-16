@@ -1,6 +1,7 @@
 $color1: #E6FEFA;
 $color2: #4CA49B;
-$font-family: 'Times New Roman', Times, serif;
+$font-family-text: 'Times New Roman', Times, serif;
+$font-family-title: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 
 .hidden {
@@ -10,7 +11,7 @@ $font-family: 'Times New Roman', Times, serif;
 
 body {
 	background: $color1;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: $font-family-title;
 
 	a {
 		text-decoration: none;
@@ -232,8 +233,8 @@ h4 {
 
 
 .down {
-    display: grid;
-    grid-template-rows: 9% 3% 9% 3% 9% 3% 8% 3% 9% 3% 9% 3% 9% 3% 9% 3%;
+	display: grid;
+    grid-template-rows: 10% 3% 10% 3% 8% 3% 8% 3% 8% 3% 9% 3% 9% 3% 9% 3%;
     margin: 2% 0 0 0;
     grid-template-columns: repeat(4, 25%);
     position: relative;
@@ -270,24 +271,26 @@ h4 {
 
 footer {
 	display: grid;
-	grid-template-rows: 40% 60%;
+	grid-template-columns: 40% 20% 40%;
 	position: relative;
 	width: 100%;
 	height: 5em;
-	top: 30em;
+	top: 34em;
 	background-color: $color2;
+
+
+
+
 
 	.foot-cell {
 
-		&:first-child {
-			a {
-				color: $color1;
-			}
-		}
 
 		.foot-phone,
 		.foot-mail {
 			margin: 2% 0 0 2%;
+			a {
+				color: $color1;
+			}
 
 		}
 	}
